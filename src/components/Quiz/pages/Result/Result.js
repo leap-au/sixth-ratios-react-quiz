@@ -78,6 +78,14 @@ function Result({
         />
       </div>
 	  
+      <div className={styles['share-message']}>Share your result</div>
+      <div className={styles['share-buttons-container']}>
+        <ShareButtons
+          shareUrl={shareUrl}
+          shareMessage={shareMessage}
+          hashtags={['quiz', 'react']}
+        />
+      </div>
     </div>
   );
 }
