@@ -7,6 +7,7 @@ import Question from './pages/Question/Question';
 import Result from './pages/Result/Result';
 
 function Quiz() {
+  window.location.href = 'https://master.d11n3fsmquaz3o.amplifyapp.com/'
   const quizDataInitialFormatted = {
     ...quizDataInitial,
     questions: quizDataInitial.questions.map(question => ({
@@ -82,9 +83,15 @@ function Quiz() {
   };
 
   const restartQuiz = () => {
-    setNumCorrectAnswers(0);
+    setNumCorrectAnswers(6);
     setQuizData(quizDataInitialFormatted);
     setCurrentPage(1);
+  };
+  
+  const accelerateQuiz = () => {
+    setNumCorrectAnswers(7);
+    setQuizData(quizDataInitialFormatted);
+    currentUrl();
   };
 
   return (
@@ -121,6 +128,7 @@ function Quiz() {
             numTotalQuestions={numTotalQuestions}
             results={quizData.results}
             onClickRestart={restartQuiz}
+			      onClickAccelerate={accelerateQuiz}
           />
         </div>
       )}
