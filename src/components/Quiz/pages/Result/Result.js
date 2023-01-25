@@ -14,6 +14,7 @@ function Result({
   results,
   currentUrl,
   onClickRestart,
+  onClickAccelerate,
 }) {
   const shareUrl = currentUrl;
   const shareMessage = `I got ${numCorrectAnswers} out of ${numTotalQuestions} correct questions in "${quizTitle}" quiz. Check it here: ${currentUrl}`;
@@ -65,6 +66,20 @@ function Result({
         />
       </div>
 
+<div className={styles['accelerate-button-container']}>
+        <Button
+          text="Accelerate"
+          onButtonClick={onClickAccelerate}
+          inlineStyle={{
+            fontSize: '11px',
+            lineHeight: '13px',
+          }}
+          iconRight={iconRight}
+        />
+      </div>
+	  
+    </div>
+
       <div className={styles['share-message']}>Share your result</div>
       <div className={styles['share-buttons-container']}>
         <ShareButtons
@@ -95,6 +110,7 @@ Result.propTypes = {
   ).isRequired,
   currentUrl: PropTypes.string.isRequired,
   onClickRestart: PropTypes.func.isRequired,
+  onClickAccelerate: PropTypes.func.isRequired,
 };
 
 export default Result;
