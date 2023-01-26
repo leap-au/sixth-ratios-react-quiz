@@ -77,8 +77,6 @@ function Result({
           iconRight={iconRight}
         />
       </div>
-	  
-    </div>
 
       <div className={styles['share-message']}>Share your result</div>
       <div className={styles['share-buttons-container']}>
