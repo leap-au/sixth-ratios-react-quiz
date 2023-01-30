@@ -14,7 +14,6 @@ function Result({
   results,
   currentUrl,
   onClickRestart,
-  onClickAccelerate,
 }) {
   const shareUrl = currentUrl;
   const shareMessage = `I got ${numCorrectAnswers} out of ${numTotalQuestions} correct questions in "${quizTitle}" quiz. Check it here: ${currentUrl}`;
@@ -51,25 +50,15 @@ function Result({
       <div className={styles.title}>
         <strong>{chosenResult.title}</strong>
       </div>
-
-      <div className={styles.description}>{chosenResult.description}</div>
+      
+      <div className={styles.description}>
+	    <a href="https://master.d11n3fsmquaz3o.amplifyapp.com/">{chosenResult.description}</a>
+	  </div>
 
       <div className={styles['restart-button-container']}>
         <Button
           text="Restart"
           onButtonClick={onClickRestart}
-          inlineStyle={{
-            fontSize: '11px',
-            lineHeight: '13px',
-          }}
-          iconRight={iconRight}
-        />
-      </div>
-
-<div className={styles['accelerate-button-container']}>
-        <Button
-          text="Accelerate"
-          onButtonClick={onClickAccelerate}
           inlineStyle={{
             fontSize: '11px',
             lineHeight: '13px',
@@ -108,7 +97,6 @@ Result.propTypes = {
   ).isRequired,
   currentUrl: PropTypes.string.isRequired,
   onClickRestart: PropTypes.func.isRequired,
-  onClickAccelerate: PropTypes.func.isRequired,
 };
 
 export default Result;
