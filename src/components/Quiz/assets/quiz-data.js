@@ -14,11 +14,11 @@ const quizData = {
           isCorrect: false,
         },
         {
-          id: 3:3,
-          text: 'fractions',
+          id: 2,
+          text: '3:3',
           isCorrect: true,
         },
-		{
+	{
           id: 3,
           text: '1:6',
           isCorrect: false,
