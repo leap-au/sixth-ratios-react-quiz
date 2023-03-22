@@ -54,6 +54,18 @@ function Result({
       <div className={styles.description}>
 	    <a href="https://au-leap.azurewebsites.net/Lessons/SevenGradeRPLesson">{chosenResult.description}</a>
 	  </div>
+	  
+      <div className={styles['restart-button-container']}>
+        <Button
+          text="Restart"
+          onButtonClick={onClickRestart}
+          inlineStyle={{
+            fontSize: '11px',
+            lineHeight: '13px',
+          }}
+          iconRight={iconRight}
+        />
+      </div>
 
       <div className={styles['share-message']}>Share your result</div>
       <div className={styles['share-buttons-container']}>
