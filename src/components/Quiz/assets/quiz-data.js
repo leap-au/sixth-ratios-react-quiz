@@ -5,27 +5,27 @@ const quizData = {
   questions: [
     {
       id: 1,
-      text: 'Ratios are _______',
-	  img: 'question-example.jpg',
+      text: 'What is the ratio of blue ovals to orange ovals?',
+	  img: 'orange-blue-ovals.png',
       alternatives: [
         {
           id: 1,
-          text: 'useless',
+          text: '2:3',
           isCorrect: false,
         },
         {
-          id: 2,
+          id: 3:3,
           text: 'fractions',
           isCorrect: true,
         },
 		{
           id: 3,
-          text: 'colorful',
+          text: '1:6',
           isCorrect: false,
         },
 		{
           id: 4,
-          text: 'happy',
+          text: '6:6',
           isCorrect: false,
         },
       ],
