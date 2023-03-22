@@ -266,7 +266,8 @@ const quizData = {
         to: 7,
       },
       title: 'Congratulations, you scored 70%!  Please accelerate to the next levek.',
-      description:
+      subtitle: 'Please accelerate to the next level.',	  
+      description:      
         'Go',
 	  img: 'result-example.jpg',
     },
@@ -278,7 +279,8 @@ const quizData = {
         to: 8,
       },
       title: 'Congratulations, you scored 80%!  Please accelerate to the next levek.',
-      description:
+      subtitle: 'Please accelerate to the next level.',	  
+      description:      
         'Go',
 	  img: 'result-example.jpg',
     },
@@ -289,7 +291,8 @@ const quizData = {
         to: 9,
       },
       title: 'Congratulations, you scored 90%! Please accelerate to the next level.',
-      description:
+      subtitle: 'Please accelerate to the next level.',	  
+      description:      
         'Go',
 	  img: 'result-example.jpg',
     },
@@ -300,6 +303,7 @@ const quizData = {
         to: 10,
       },
       title: 'Congratulations, you got everything right!  Please accelerate to the next level.',
+      subtitle: 'Please accelerate to the next level.',	  
       description:
         'Go',
       img: 'result-example.jpg',
