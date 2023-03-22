@@ -6,7 +6,7 @@ const quizData = {
     {
       id: 1,
       text: 'What is the ratio of blue ovals to orange ovals?',
-	  img: 'orange-blue-ovals.png',
+	  img: 'question-example.jpg',
       alternatives: [
         {
           id: 1,
